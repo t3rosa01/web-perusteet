@@ -25,7 +25,7 @@ Teknologiat
 
     HTML5: Sivuston rakenne ja sisältö
 
-    CSS3: Tyylit ja responsiivisuus
+    CSS: Tyylit ja responsiivisuus
 
     JavaScript: Sovelluksen logiikka ja interaktiot
 
