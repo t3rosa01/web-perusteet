@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävät - Panic-Planner</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Tehtävälista</h1>
+    <nav>
+      <a href="index.html">Etusivu</a>
+      <a href="tehtavat.html">Tehtävät</a>
+      <a href="ajastin.html">Ajastin</a>
+    </nav>
+  </header>
+  <main>
+    <input type="text" id="taskInput" placeholder="Kirjoita tehtävä">
+    <input type="date" id="taskDate">
+    <button onclick="addTask()">Lisää tehtävä</button>
+    <div id="taskList"></div>
+  </main>
+  <h2>Kaikki tehtävät</h2>
+  <main>
+<div id="allTasks"></div>
+</main>
+  <script src="./js/tehtavat.js"></script>
+    <script>
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("taskDate").value = today;
+    showTasks(today);
+    </script>
+  
+</body>
+</html>
